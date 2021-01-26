@@ -1,0 +1,82 @@
+#root {
+  height: 100%;
+}
+
+.App-container {
+  margin: 0 235px 0 80px;
+}
+
+.ui.placeholder.segment {
+  height: 420px;
+}
+
+.dropzone {
+  height: 360px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border-width: 2px;
+  border-radius: 2px;
+  border-color: #eeeeee;
+  border-style: dashed;
+  background-color: #fafafa;
+  color: #bdbdbd;
+  outline: none;
+  transition: border .24s ease-in-out;
+}
+
+.dropzone:hover {
+  border-color:#acacac;
+}
+
+div.btn_transfer {
+  margin: 0 auto;
+  width: fit-content;
+  margin-top: 30px;
+}
+
+.ui.inverted.button  {
+  font-size: 19px;
+  background-color: #000000;
+  border-radius: 6px;
+}
+
+.ui.inverted.button:hover {
+  background-color: #414141;
+  color: #ffffff;
+}
+
+.ui.inverted.button:focus {
+  font-size: 19px;
+  background-color: #000000;
+  color: #ffffff;
+  /* border-radius: 6px; */
+}
+
+div.img_input {
+  display: 'inline-flex';
+  border-radius: 2;
+  margin-bottom: 8;
+  margin-right: 8;
+  max-width: 100%;
+  max-height: 250px;
+  padding: 4;
+  text-align: center;
+}
+
+div.img_input > img{
+  display: 'block';
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+}
+
+div.product {
+  display: 'block';
+  max-width: 100%;
+  max-height: 1000px;
+  text-align: center;
+}
