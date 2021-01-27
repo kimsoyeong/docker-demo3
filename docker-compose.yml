@@ -26,7 +26,7 @@ services:
     expose:
       - 5000
     ports:
-      - "5000:5000"    
+      - "5000:5000"
     links:  
       - mysql_db:mysql_db             
     depends_on:
@@ -36,6 +36,7 @@ services:
     restart: always  
     volumes:
        - ./flask/web:/app        
+    command: gunicorn -w 1 -b 0.0.0.0:5000 app:app
 
   react_app:
     build:
